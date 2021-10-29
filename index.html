@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-center">
+        <h1 class="display-4">Опрос</h1>
+      </div>
+      <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+            <h4 class="m-0">Шаг 1</h4>
+          <h6 class="m-0">Персональные данные</h6></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+            <h4 class="m-0">Шаг 2</h4>
+            <h6 class="m-0">Вопросы</h6></button>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+            <h4 class="m-0">Шаг 3</h4>
+            <h6 class="m-0">Хм</h6></button>
+          </button>
+        </li>
+      </ul>
+      
+
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade pt-4 show active" id="home" role="tabpanel" aria-labelledby="home-tab"> 
+          <div class="row">    
+            <div class="col-md-3">
+                <label for="inputName" class="form-label">Пол:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                  Женский
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                  Мужской
+                  </label>
+                </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="email ">Имя:</label>
+                <input type="email" class="form-control" id="age" name="email" placeholder="Миша Котов">
+              </div>
+            </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="pwd text-uppercase">Возраст:</label>
+                       <input type="tel" class="form-control" id="tel" name="pswd" placeholder="45">
+                  </div>
+                </div>
+          </div>
+  
+          <div class="row mt-4">    
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="email ">Электронная почта:</label>
+                <input type="email" class="form-control" id="age" name="email" placeholder="mishacoolguy@mail.ru">
+              </div>
+            </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="pwd text-uppercase">Телефон:</label>
+                       <input type="tel" class="form-control" id="tel" name="pswd" placeholder="8942198532">
+                  </div>
+                </div>
+          </div>
+            
+            <div class="row mt-4">    
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="email ">Город:</label>
+                  <input type="email" class="form-control" id="age" name="email" placeholder="Баймак">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="pwd text-uppercase">Адрес:</label>
+                  <input type="tel" class="form-control" id="tel" name="pswd" placeholder="ул. Светлый дом, 54, 64">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="pwd text-uppercase">Как дела?</label>
+                  <input type="tel" class="form-control" id="tel" name="pswd" placeholder="Норм">
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-4">    
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label for="email ">Город:</label>
+                  <input type="email" class="form-control" id="age" name="email" placeholder="Баймак">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="pwd text-uppercase">Адрес:</label>
+                  <input type="tel" class="form-control" id="tel" name="pswd" placeholder="ул. Светлый дом, 54, 64">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="pwd text-uppercase">Как дела?</label>
+                  <input type="tel" class="form-control" id="tel" name="pswd" placeholder="Норм">
+                </div>
+              </div>
+            </div>
+  
+            <div class="d-flex justify-content-end ">
+              <button type="button" class="btn btn-primary mt-4">Следующий шаг</button> 
+            </div>
+        </div>
+
+        <div class="tab-pane fade pt-4" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="text-center fw-bold">
+            <p >Вопрос 1: как дела?(</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <figure class="figure w-100">
+                <img src="img/howrugurl.jpg" class="w-100"  alt="imggg">
+                <figcaption class="figure-caption mt-2">Необычный текст под картинкой</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Замечательно
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Великолепно
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                 Прикольно
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Нормально
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Плохо
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <input type="email" class="form-control" id="age" name="email" placeholder="Другое">
+                </label>
+                <div id="passwordHelpBlock" class="form-text">
+                  Напиши сам, если нет подходящих вариантов ответа.
+                </div>
+              </div>
+            </div>
+           
+          </div>
+          <hr>
+
+          <div class="text-center fw-bold">
+            <p >Вопрос 2: тебе нравится Таня из сериала СашаТаня?</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <figure class="figure w-100">
+                <img src="img/wow.jpg" class="w-100" alt="imggg">
+                <figcaption class="figure-caption mt-2">Необычный текст под картинкой</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Замечательно
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Великолепно
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                 Прикольно
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Нормально
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Плохо
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <input type="email" class="form-control" id="age" name="email" placeholder="Другое">
+                </label>
+                <div id="passwordHelpBlock" class="form-text">
+                  Напиши сам, если нет подходящих вариантов ответа.
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+
+          <div class="text-center fw-bold">
+            <p >Вопрос 3: как относишься к Сильвестру Андреевичу?</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <figure class="figure w-100">
+                <img src="img/woow.jpg" class="w-100" alt="imggg">
+                <figcaption class="figure-caption mt-2">Необычный текст под картинкой</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Замечательно
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Великолепно
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                 Прикольно
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Нормально
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Плохо
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <input type="email" class="form-control" id="age" name="email" placeholder="Другое">
+                </label>
+                <div id="passwordHelpBlock" class="form-text">
+                  Напиши сам, если нет подходящих вариантов ответа.
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="text-center fw-bold">
+            <p >Вопрос 4: по-твоему мнению интерны круче?</p>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <figure class="figure w-100">
+                <img src="img/wooow.jpg" class="w-100" alt="imggg">
+                <figcaption class="figure-caption mt-2">Необычный текст под картинкой</figcaption>
+              </figure>
+            </div>
+            <div class="col-md-6">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  ДА
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  НЕТ!
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <input type="email" class="form-control" id="age" name="email" placeholder="Другое">
+                </label>
+                <div id="passwordHelpBlock" class="form-text">
+                  Напиши сам, если нет подходящих вариантов ответа.
+                </div>
+              </div>
+            </div>
+           
+          </div>
+          <div class="d-flex justify-content-end ">
+            <button type="button" class="btn btn-primary m-4">Следующий шаг</button> 
+          </div>
+        </div>
+       
+        <div class="tab-pane fade pt-4" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <div class="row">
+            <div class="col-md-6">
+              <h5>Вопрос 5: Как ты оцениваешь сериал Интерны?</h5>
+              <p class="t-secondary">Выбери по шкале от 1 - отстой, до 5 - круто.</p>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group row d-flex justify-content-between">
+                <div class="col m-0">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                  1
+                  </label>
+                </div>
+                <div class="col m-0">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                  2
+                  </label>
+                </div>
+                <div class="col m-0">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                  3
+                  </label>
+                </div>
+                <div class="col m-0">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                  4
+                  </label>
+                </div>
+                <div class="col p-0">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                  5
+                  </label>
+                </div>
+                <div class="col p-0">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                  Не знаю
+                  </label>
+                </div>
+              </div>
+              <div class="form-floating mt-4">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Напиши комментарий...</label>
+              </div>
+            </div>
+            <hr class="my-4">
+
+
+            <div class="col-md-6">
+              <h5>Вопрос 5: Насколько нравится Купитман?</h5>
+              <p class="t-secondary">Выбери по шкале от 1 - не нравится, до 5 - очень нравится.</p>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group row">
+                <div class="col">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                  1
+                  </label>
+                </div>
+                <div class="col">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                  2
+                  </label>
+                </div>
+                <div class="col">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                  3
+                  </label>
+                </div>
+                <div class="col">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                  4
+                  </label>
+                </div>
+                <div class="col">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                  5
+                  </label>
+                </div>
+                <div class="col p-0">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                  <label class="form-check-label" for="flexRadioDefault2">
+                  Не знаю
+                  </label>
+                </div>
+              </div>
+              <div class="form-floating mt-4">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Напиши комментарий...</label>
+              </div>
+            </div>
+            <hr class="my-4">
+          <div class="col-md-6">
+            <h5>Вопрос 5: Как ты оцениваешь сериал Интерны?</h5>
+            <p class="t-secondary">Выбери по шкале от 1 - отстой, до 5 - круто.</p>
+          </div>
+          <div class="col-md-6">
+              <div class="d-flex justify-content-between btn-group ml-2" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio1"> 1</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio2"> 2 </label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio3"> 3</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio4"> 4</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio5"> 5</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio12" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio12">Не знаю</label>
+                </div>
+              <div class="form-floating mt-2">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Напиши комментарий...</label>
+              </div>
+          </div>
+          <hr class="my-4">
+          <div class="col-md-6">
+            <h5>Вопрос 5: Насколько нравится Кисигач?</h5>
+            <p class="t-secondary">Выбери по шкале от 1 - отстой, до 5 - круто.</p>
+          </div>
+          <div class="col-md-6">
+              <div class="d-flex justify-content-between btn-group ml-2" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio6"> 1</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio7"> 2 </label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio8"> 3</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio9" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio9"> 4</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio10" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio10"> 5</label>
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio11" autocomplete="off">
+                <label class="btn btn-outline-secondary" for="btnradio11">Не знаю</label>
+                </div>
+              <div class="form-floating mt-2">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Напиши комментарий...</label>
+              </div>
+          </div>
+          <hr class="my-4">
+          <div class="col-md-6">
+            <h5>Вопрос 5: Насколько нравится Фил?</h5>
+            <p class="t-secondary">Выбери по шкале от 1 - отстой, до 5 - круто.</p>
+          </div>
+          <div class="col-md-6">
+              <div class="input-group mb-3">
+                <input type="range" class="form-range" min="0" max="5" id="customRange2">
+            </div>
+            <div class="form-floating mt-4">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Напиши комментарий...</label>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="col-md-6">
+          <h5>Вопрос 5: Чай, индийский чай, грузинский чай чайчайчайчай</h5>
+          <p class="t-secondary">Выбери по шкале от 1 - отстой, до 5 - круто.</p>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group mb-3">
+              <input type="range" class="form-range" min="0" max="5" id="customRange2">
+          </div>
+          <div class="form-floating mt-4">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Напиши комментарий...</label>
+          </div>
+      </div>
+      <hr class="my-4">
+    </div>
+    <div class="d-flex justify-content-end ">
+      <a href="aaa.html" class="white">Результаты</a>
+    </div>
+  </div>
+        </div>
+      </div>
+      
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
